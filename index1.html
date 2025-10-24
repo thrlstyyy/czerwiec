@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            margin-top: 50px;
+            float: right;
+        }
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Dodaj nową grę</h3>
+        <label for="gameTitle">nazwa:</label><br>
+        <input type="text" id="gameTitle" name="gameTitle" required>
+        <br><br>
+        <label for="opis">opis:</label><br>
+        <input type="text" id="opis" name="opis" required>
+        <br><br>
+        <label for="price">cena:</label><br>
+        <input type="number" id="price" name="price" required>
+        <br><br>
+        <label for="zdjecie">zdjecie:</label>
+        <input type="text" id="zdjecie" name="zdjecie" required>
+        <br><br>
+        <input type="submit" value="Dodaj grę"> 
+    </form>
+</body>
+</html>
